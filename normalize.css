@@ -1,0 +1,113 @@
+/* normalize.css */
+
+/**
+ * 1. Corrige a fonte e o espaçamento em blocos de preformatação.
+ */
+ pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 1 */
+  }
+  
+  /**
+   * 2. Remove a margem da tabela.
+   */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  /**
+   * 3. Corrige a quebra de palavras em navegadores modernos.
+   */
+  hr {
+    box-sizing: content-box; /* 3 */
+    height: 0; /* 3 */
+  }
+  
+  /**
+   * 4. Corrige a ocultação da imagem no IE 11.
+   */
+  [hidden] {
+    display: none;
+  }
+  
+  /**
+   * 5. Corrige a exibição do conteúdo oculto em navegadores modernos.
+   */
+  details {
+    display: block;
+  }
+  
+  /**
+   * 6. Corrige a borda e o preenchimento exibidos de forma inconsistente em todos os navegadores.
+   */
+  summary {
+    display: list-item;
+  }
+  
+  /**
+   * 7. Corrige a exibição dos elementos de lista embutidos em navegadores modernos.
+   */
+  audio,
+  canvas,
+  progress,
+  video {
+    display: inline-block; /* 7 */
+  }
+  
+  /**
+   * 8. Corrige o estilo de fonte no Firefox 4+.
+   */
+  [readonly] {
+    cursor: default;
+  }
+  
+  /**
+   * 9. Corrige a animação de loop em todos os navegadores.
+   */
+  [hidden],
+  template {
+    display: none;
+  }
+  
+  /**
+   * 10. Corrige o tratamento de links sobrescritos por padrão.
+   */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /**
+   * 11. Garante que as imagens não tenham borda e não causem sobreposições indesejadas.
+   */
+  img {
+    border-style: none;
+    vertical-align: middle;
+  }
+  
+  /**
+   * 12. Define a largura do box-sizing para border-box para todos os elementos.
+   */
+  * {
+    box-sizing: border-box;
+  }
+  
+  /**
+   * 13. Define uma altura mínima para os elementos da página.
+   */
+  html,
+  body {
+    min-height: 100%;
+  }
+  
+  /**
+   * 14. Corrige o tratamento de espaços em branco em elementos de lista.
+   */
+  ul,
+  ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
