@@ -1,51 +1,56 @@
-/* reset.css */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
+body {
+    padding: 62px 108px 0;
     font-family: 'Kumbh Sans', sans-serif;
-    vertical-align: baseline;
+    color: white;
+    background-color: #17162E;
 }
-/* Adiciona o estilo para o HTML5 elements */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
-/* Resetar as listas padrão */
-ol, ul {
-    list-style: none;
+
+#title-header {
+    font-size: 36px;
+    font-weight: 600;
+    padding-bottom: 48px;
 }
-/* Elementos incorporados por padrão */
-blockquote, q {
-    quotes: none;
+
+#show-favorite-movies {
+    padding: 30px 0 64px;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-/* Define o tamanho da fonte e margem de reset para elementos empregando o elemento 'em' */
-ins {
-    text-decoration: none;
+
+#item {
+    display: flex;
+    align-items: center;
+
 }
-del {
-    text-decoration: line-through;
+
+#item-section-main {
+    display: flex;
+    align-items: center;
 }
-/* Tabelas ainda possuem 'collapse' como padrão */
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
+
+#item-section-main-img {
+    width: 215px;
+    height: 139px; /* Tornar altura igual à largura para uma imagem circular */
+    border-radius: 50%;
+    object-fit: fill; /* Garante que a imagem cubra todo o contêiner */
+}
+
+#item-section-main-secundary {
+    display: flex;
+    flex-direction: column;
+}
+
+#item-section-main-details {
+    display: flex;
+
 }

@@ -4,44 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
- 
     <title>Filmes Populares</title>
 </head>
 
 <body>
     <header>
-        <h1>Filmes Populares</h1>
-        <label for="search">Pesquisar:</label>
-        <input type="search" id="search">
-        <div>
-            <input type="checkbox">
-            <label for="checkbox">Mostrar meus filmes favoritos apenas</label>
-
+        <h1 id="title-header">Filmes Populares</h1>
+        <input type="search" id="search" placeholder="Buscar filmes...">
+        <div id="show-favorite-movies">
+            <input type="checkbox" id="show-favorite-movies-checkbox">
+            <label for="show-favorite-movies-checkbox" id="show-favorite-movies-label">Mostrar meus filmes favoritos
+                apenas</label>
         </div>
     </header>
 
     <main>
-        <article>
-            <div>
-                <img src="https://image.tmdb.org/t/p/w500/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg"
-                    alt="Capa do filme Godzilla vs. Kong">
-                <h2>Godzilla vs. Kong 2021</h2>
-                <div>
-                    <span>⭐️</span> 6,4
-                    <span>
-                        Favoritar
-                        <button>❤️</button>
-                    </span>
+        <article id="item">
+            <div id="item-section-main">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJAFSETCmiu9g2_GsK9xzydXjkNZxeVrdbSlFGlEwMNw&s"
+                    id="item-section-main-img" alt="Capa do filme Godzilla vs. Kong">
+                <div id="item-section-main-secundary">
+                    <h2>Godzilla vs. Kong 2021</h2>
+                    <div id="item-section-main-details">
+                        <span>⭐️</span> 6,4
+                        <span>
+                            Favoritar
+                            <button>❤️</button>
+                        </span>
+                    </div>
                 </div>
             </div>
-
-            <p>Godzilla vs. Kong é um filme de ação, ficção científica e suspense americano de 2021 dirigido por
-                Adam Wingard. É uma sequência direta de Godzilla II: Rei dos Monstros e Kong: A Ilha da Caveira, e é
-                o quarto filme do MonsterVerse da Legendary Entertainment. O filme é estrelado por Alexander
-                Skarsgård, Millie Bobby Brown, Rebecca Hall, Brian Tyree Henry, Shun Oguri, Eiza González, Julian
-                Dennison, Kyle Chandler e Demián Bichir.</p>
-
+            <p>Godzilla vs. Kong é um filme de ação, ficção científica e suspense americano de 2021 dirigido por Adam
+                Wingard. É uma sequência direta de Godzilla II: Rei dos Monstros e Kong: A Ilha da Caveira, e é o quarto
+                filme do MonsterVerse da Legendary Entertainment. O filme é estrelado por Alexander Skarsgård, Millie
+                Bobby Brown, Rebecca Hall, Brian Tyree Henry, Shun Oguri, Eiza González, Julian Dennison, Kyle Chandler
+                e Demián Bichir.</p>
         </article>
     </main>
 
